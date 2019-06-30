@@ -2,7 +2,7 @@
 <main>
 <h1 class="mt">{{ .Title }}</h1>
 
-{{ if .Date }}
+{{ if not .Date.IsZero }}
 <p><b>{{ .Date.Format "2006-01-02" }}</b></p>
 {{ end }}
 
