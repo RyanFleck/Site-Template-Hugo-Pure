@@ -1,6 +1,6 @@
 ---
 title: "Tech Article"
-date: 2019-02-13T09:01:20-05:00
+date: 2019-03-14T09:01:20-05:00
 image: "/content-cover-images/coffee-phone.jpg"
 summary: "Content summary should be written here."
 draft: false
