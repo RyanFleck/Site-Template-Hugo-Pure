@@ -3,9 +3,7 @@
 <h1 class="mt">{{ .Title }}</h1>
 
 {{ if .Date }}
-<small>
-<p class="text-muted">{{ .Date.Format "2006-01-02" }}</p>
-</small>
+<p><b>{{ .Date.Format "2006-01-02" }}</b></p>
 {{ end }}
 
 {{ if .Params.summary }}

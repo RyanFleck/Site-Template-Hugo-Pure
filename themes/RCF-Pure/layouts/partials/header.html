@@ -1,22 +1,22 @@
 <header>
     <nav class="navbar">
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+        <h1 class="navbar-brand"><a class="navbar-brand" href="{{ .Site.BaseURL }}">
             {{ .Site.Params.long_site_title }}
-        </a>
-        <ul class="navbar-nav ml-auto">
+        </a></h1>
+        <p class="navbar-nav ml-auto">
 
             {{ range .Site.Sections }}
-            <li class="nav-item">
+            <span class="nav-item">
                 <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
-            </li>
+            </span>
             {{ end }}
 
             {{ range (where site.RegularPages "Section" "") }}
-            <li class="nav-item">
+            <span class="nav-item">
                 <a class="nav-link" href="{{ .Permalink }}">{{ .Title }}</a>
-            </li>
+            </span>
             {{ end }}
 
-        </ul>
+        </p>
     </nav>
 </header>
