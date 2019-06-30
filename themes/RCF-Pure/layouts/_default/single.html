@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main>
+<h1 class="mt">{{ .Title }}</h1>
+
+{{ if .Date }}
+<small>
+<p class="text-muted">{{ .Date.Format "2006-01-02" }}</p>
+</small>
+{{ end }}
+
+{{ if .Params.summary }}
+    <p>{{ .Params.summary }}</p>
+{{ end }}
+{{ if .Params.toc }}
+    <h4>Contents</h4>
+    {{ .TableOfContents }}
+{{ end }}
+
+<article>
+{{ .Content }}
+</article>
+
+</main>
+{{end}}
