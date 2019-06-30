@@ -11,15 +11,15 @@ html{
 
 body{
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 @media only screen and (min-width: 900px) {
     body{
-        max-width: 700px;
+        max-width: 590px;
     }
     html{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
