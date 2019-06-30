@@ -6,7 +6,7 @@ html{
     -moz-osx-font-smoothing: auto !important;
     font-family: 'Courier New', Courier, monospace;
     padding: 1rem;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body{
@@ -14,8 +14,17 @@ body{
     max-width: 500px;
 }
 
+@media only screen and (min-width: 900px) {
+    body{
+        max-width: 700px;
+    }
+    html{
+        font-size: 20px;
+    }
+}
+
 a{
-    color: rgb(83, 0, 192);
+    color: rgb(69, 0, 197);
     text-decoration: none;
 }
 
